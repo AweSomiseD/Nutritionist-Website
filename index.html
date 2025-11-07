@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutritionist Home Page Landing Website</title>
+    <link rel="icon" type="image/x-icon" href="/Assets/Favicon/Frame Favicon.png">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="input.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body id="top" class="font-urbanist">
+    <!-- Section 1 Navbar -->
+    <nav class="bg-[#1A3129] text-white px-6 md:px-10 lg:px-16 py-4">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-3 cursor-pointer">
+                <img src="./Assets/Logo/Nutritionist Logo.png" alt="Nutritionist Logo" class="h-10 w-auto">
+            </div>
+
+            <!-- Hamburger (Mobile + Tablet only) -->
+            <label class="cursor-pointer text-3xl lg:hidden block relative z-50">
+                <input type="checkbox" id="menu-toggle" class="hidden peer" />
+
+                <!-- Hamburger & Close Icons -->
+                <span class="block peer-checked:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </span>
+                <span class="hidden peer-checked:block">✕</span>
+
+                <!-- Mobile + Tablet Menu -->
+                <div
+                    class="fixed inset-0 bg-[#1A3129] flex flex-col items-center justify-center space-y-6 text-white font-medium transform -translate-x-full peer-checked:translate-x-0 transition-transform duration-500 ease-in-out lg:hidden">
+                    <a href="index.html" class="text-green-400 hover:text-green-400 underline text-lg">Home</a>
+                    <a href="About.html" class="hover:text-green-400 underline text-lg">About</a>
+                    <a href="Team.html" class="hover:text-green-400 underline text-lg">Team</a>
+                    <a href="Process.html" class="hover:text-green-400 underline text-lg">Process</a>
+                    <a href="Pricing.html" class="hover:text-green-400 underline text-lg">Pricing</a>
+                    <a href="Blog.html" class="hover:text-green-400 underline text-lg">Blog</a>
+                    <a href="Contact.html" class="bg-white text-black px-6 py-2 rounded-xl">Contact Us</a>
+                </div>
+            </label>
+
+            <!-- Desktop Menu (Only lg and above) -->
+            <ul class="hidden lg:flex items-center gap-10 font-medium">
+                <li><a href="index.html" class="text-green-400 underline font-semibold">Home</a></li>
+                <li><a href="About.html" class="hover:text-green-400 hover:underline">About</a></li>
+                <li><a href="Team.html" class="hover:text-green-400 hover:underline">Team</a></li>
+                <li><a href="Process.html" class="hover:text-green-400 hover:underline">Process</a></li>
+                <li><a href="Pricing.html" class="hover:text-green-400 hover:underline">Pricing</a></li>
+                <li><a href="Blog.html" class="hover:text-green-400 hover:underline">Blog</a></li>
+                <li>
+                    <a href="Contact.html"
+                        class="bg-[#CBEA7B] hover:bg-white text-black px-5 py-2 rounded-lg transition">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section 2 Personalized -->
+
+    <section
+        class="relative flex flex-col lg:flex-row items-center justify-between text-black px-6 py-12 lg:py-0 lg:px-0 gap-7 space-y-5">
+        <!-- Left Image -->
+        <div class="w-full relative">
+            <img src="./Assets/Section 2/Section 2 image left side.png" alt="A girl picture"
+                class="w-full h-full rounded-br-3xl object-contain">
+
+            <!-- Sub Image Happy Customer-->
+            <div
+                class="absolute md:absolute md:left-115 bottom-4 left-63 -translate-x-1/2 translate-y-1/2 flex flex-col items-center gap-2 lg:hidden">
+                <img src="./Assets/Section 2/Container.png" alt="Happy Customers Reviews part"
+                    class="h-[52px] w-[102px]">
+                <p class="text-green-600 text-center text-sm">
+                    430+ <span class="text-gray-700">Happy Customers</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Right Text Section -->
+        <div class="w-full md:px-7 xl:space-y-5 text-center lg:text-left pt-7 lg:pt-0.5">
+            <p class="text-lg md:font-semibold border-b-[3px] border-[#CBEA7B] inline-block pb-1">
+                Transform Your ❤️ Health with
+            </p>
+            <h1 class="text-3xl lg:text-4xl font-semibold leading-tight lg:max-w-[20ch]">
+                Personalized <span class="block md:inline">Nutrition Coaching</span>
+            </h1>
+            <p class="max-w-[80ch] mx-auto md:mx-0">
+                Welcome to Nutritionist, your partner in achieving optimal health through personalized nutrition
+                coaching.
+                Our certified nutritionists are here to guide you on your weight loss journey, providing customized
+                plans
+                and ongoing support. Start your transformation today and experience the power of personalized nutrition
+                coaching.
+            </p>
+
+            <!-- Buttons -->
+            <div class="flex sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4 lg:pt-2">
+                <button
+                    class="bg-[#CBEA7B] text-black font-semibold px-6 py-3 rounded-lg transition-all hover:bg-[#b6d66c]">
+                    Get Started Today
+                </button>
+                <button
+                    class="border border-[#CBEA7B] font-semibold px-6 py-3 rounded-lg transition-all hover:bg-[#CBEA7B]">
+                    Book a Demo
+                </button>
+            </div>
+
+            <!-- Sub Image (Desktop Only) -->
+            <div class="hidden lg:flex xl:pt-10 lg:pt-3 items-center gap-3">
+                <img src="./Assets/Section 2/Container.png" alt="Happy Customers Reviews part"
+                    class="h-[66px] w-[130px]">
+                <p class="text-green-600">
+                    430+ <span class="text-gray-700 font-urbanist">Happy Customers</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3 Features -->
+    <section class="text-black px-6 md:px-20 md:py-18 py-16">
+        <!-- Top Heading -->
+        <div class="text-center pb-10 md:pb-16">
+            <h1 class="text-3xl font-bold mb-3">Features</h1>
+            <p class="text-base max-w-2xl mx-auto">
+                Welcome to the Feature Section of Nutritionist, your ultimate destination for all things nutrition and
+                wellness.
+            </p>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+            <!-- Feature Item 1 -->
+            <div>
+                <div class="flex items-center gap-4">
+                    <img src="./Assets/Features/Icon Container.png" alt="Personalized Feature Icon" class="w-14 h-14">
+                    <h2 class="text-lg font-semibold mb-1">Personalized Nutrition Plans</h2>
+                </div>
+                <p class="pt-2.5">
+                    Receive a tailored nutrition plan designed specifically for your body and goals. Our certified
+                    nutritionists will consider your unique needs, dietary preferences, and health conditions to
+                    create a plan that suits you best.
+                </p>
+            </div>
+
+
+            <!-- Feature Item 2 -->
+            <div>
+                <div class="flex items-center gap-4 max-w-[35ch]">
+                    <img src="./Assets/Features/Icon Container (1).png" alt="Guidance feature Icon" class="w-14 h-14">
+                    <h2 class="text-lg font-semibold mb-1">Guidance from Certified Nutritionists</h2>
+                </div>
+                <p class="pt-2.5">
+                    Our team of experienced and certified nutritionists will provide professional guidance and
+                    support throughout your journey. They will answer your questions, address your concerns, and
+                    keep you motivated as you work towards your goals.
+                </p>
+            </div>
+
+
+            <!-- Feature Item 3 -->
+            <div>
+                <div class="flex items-center gap-4">
+                    <img src="./Assets/Features/Icon Container (2).png" alt="Food Tracking feature Icon"
+                        class="w-14 h-14">
+                    <h2 class="text-lg font-semibold mb-1">Food Tracking and Analysis</h2>
+                </div>
+                <p class="pt-2.5">
+                    Effortlessly track your food intake using our user-friendly app. Our nutritionists will analyze
+                    your data to provide insights into your eating habits, help you identify areas for improvement,
+                    and make personalized recommendations.
+                </p>
+            </div>
+
+
+            <!-- Feature Item 4 -->
+            <div>
+                <div class="flex items-center gap-4">
+                    <img src="./Assets/Features/Icon Container (3).png" alt="Meal Planning Feature Icon"
+                        class="w-14 h-14">
+                    <h2 class="text-lg font-semibold mb-1">Meal Planning and Recipes</h2>
+                </div>
+                <p class="pt-2.5">
+                    Access a vast collection of delicious and healthy recipes tailored to your dietary needs. Our
+                    nutritionists will also create personalized meal plans, making it easier for you to stay on
+                    track and enjoy nutritious meals.
+                </p>
+            </div>
+
+
+            <!-- Feature Item 5 -->
+            <div>
+                <div class="flex items-center gap-4">
+                    <img src="./Assets/Features/Icon Container (4).png" alt="Lifestyle Feature Icon" class="w-14 h-14">
+                    <h2 class="text-lg font-semibold mb-1">Lifestyle and Behavior Coaching</h2>
+                </div>
+                <p class="pt-2.5">
+                    Achieving sustainable results requires more than just a diet plan. Our nutritionists will work
+                    with you to develop healthy habits, address emotional eating, and provide strategies to overcome
+                    obstacles along the way.
+                </p>
+            </div>
+
+
+            <!-- Feature Item 6 -->
+            <div>
+                <div class="flex items-center gap-4">
+                    <img src="./Assets/Features/Icon Container (5).png" alt="Nutritional Feature Icon"
+                        class="w-14 h-14">
+                    <h2 class="text-lg font-semibold mb-1">Nutritional Education and Workshops</h2>
+                </div>
+                <p class="pt-2.5">
+                    Expand your knowledge of nutrition through informative articles and educational workshops. Our
+                    nutritionists will equip you with the knowledge and tools to make informed choices for long-term
+                    success.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Blogs-->
+    <section class="md:px-20">
+        <!-- Heading and description Section-->
+        <div class="flex flex-col items-center gap-4 py-3.5">
+            <h1 class="font-semibold text-3xl">Our Blogs</h1>
+            <p class="text-sm max-w-[48ch] md:max-w-[105ch] text-center">Our blog is a treasure trove of informativ
+                articles written by our team of nutritionists,
+                dietitians, and wellness experts. Here's what you can expect from our blog.</p>
+        </div>
+        <!-- CARD Section -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 py-10 gap-6 sm:gap-8 lg:gap-10 px-4 sm:px-6 lg:px-0">
+            <!-- Card 1 -->
+            <div class="flex flex-col gap-0.5 bg-[#F6FBE9] py-3.5 rounded-2xl">
+                <img src="./Assets/Blog Section/Blog image 1.png" alt="Weight Loss"
+                    class="object-contain h-[250px] sm:h-[300px] lg:h-[350px] w-full">
+                <p class="text-sm font-semibold pt-1.5 text-[#666666] lg:pl-13">Weight Loss</p>
+                <h1 class="text-xl sm:text-2xl font-semibold lg:pl-13">
+                    The Benefits of Hydration for Weight Loss
+                </h1>
+                <p class="text-sm max-w-[75ch] py-5 lg:pl-13">
+                    Discover how staying hydrated can support your weight loss goals and improve overall health.
+                </p>
+                <div class="flex flex-col md:flex-row md:items-center">
+                    <img src="./Assets/Blog Section/Blog Container 1.png" alt="Sub container Image"
+                        class="object-contain max-w-[80%] sm:max-w-[70%] pl-8 sm:pl-12 lg:pl-16 py-5">
+                    <div class="flex md:items-center justify-center">
+                        <img src="./Assets/Blog Section/Icon Container Heart.svg" alt="Heart Icon"
+                            class="h-[40px] w-[40px]">
+                        <img src="./Assets/Blog Section/Icon Container Icon.svg" alt="Decore Icon"
+                            class="h-[40px] w-[40px]">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="flex flex-col gap-0.5 bg-[#F6FBE9] py-3.5 rounded-2xl">
+                <img src="./Assets/Blog Section/Blog image 2.png" alt="Mindful Eating"
+                    class="object-contain h-[250px] sm:h-[300px] lg:h-[350px] w-full">
+                <p class="text-sm font-semibold pt-1.5 text-[#666666] lg:pl-13">Mindful Eating</p>
+                <h1 class="text-xl sm:text-2xl font-semibold lg:pl-13">
+                    Cultivating a Healthy Relationship with Food
+                </h1>
+                <p class="text-sm max-w-[75ch] py-5 lg:pl-13">
+                    Learn how practicing mindful eating can help you develop a healthier relationship with food and
+                    improve your overall well-being.
+                </p>
+                <div class="flex flex-col md:flex-row md:items-center">
+                    <img src="./Assets/Blog Section/Blog Container 2.png" alt="Sub container Image"
+                        class="object-contain max-w-[80%] sm:max-w-[70%] pl-8 sm:pl-12 lg:pl-16 py-5">
+                    <div class="flex md:items-center justify-center">
+                        <img src="./Assets/Blog Section/Icon Container Heart.svg" alt="Heart Icon"
+                            class="h-[40px] w-[40px]">
+                        <img src="./Assets/Blog Section/Icon Container Icon.svg" alt="Decore Icon"
+                            class="h-[40px] w-[40px]">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+            <div class="flex flex-col gap-0.5 bg-[#F6FBE9] py-3.5 rounded-2xl">
+                <img src="./Assets/Blog Section/Blog Image 3.png" alt="Understanding Macronutrients"
+                    class="object-contain h-[250px] sm:h-[300px] lg:h-[350px] w-full">
+                <p class="text-sm font-semibold pt-1.5 text-[#666666] lg:pl-13">Understanding
+                    Macronutrients</p>
+                <h1 class="text-xl sm:text-2xl font-semibold lg:pl-13">
+                    Carbohydrates, Proteins, and Fats
+                </h1>
+                <p class="text-sm max-w-[75ch] py-5 lg:pl-13">
+                    Get a comprehensive understanding of macronutrients and their role in your diet for optimal health
+                    and weight management.
+                </p>
+                <div class="flex flex-col md:flex-row md:items-center">
+                    <img src="./Assets/Blog Section/Blog Container 3.png" alt="Sub container Image"
+                        class="object-contain max-w-[80%] sm:max-w-[70%] pl-8 sm:pl-12 lg:pl-16 py-5">
+                    <div class="flex md:items-center justify-center">
+                        <img src="./Assets/Blog Section/Icon Container Heart.svg" alt="Heart Icon"
+                            class="h-[40px] w-[40px]">
+                        <img src="./Assets/Blog Section/Icon Container Icon.svg" alt="Decore Icon"
+                            class="h-[40px] w-[40px]">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card 4 -->
+            <div class="flex flex-col gap-0.5 bg-[#F6FBE9] py-3.5 rounded-2xl">
+                <img src="./Assets/Blog Section/Blog Image 4.png" alt="Healthy Snacks on the Go"
+                    class="object-contain h-[250px] sm:h-[300px] lg:h-[350px] w-full">
+                <p class="text-sm font-semibold pt-1.5 text-[#666666] lg:pl-13">Healthy Snacks on the Go
+                </p>
+                <h1 class="text-xl sm:text-2xl font-semibold lg:pl-13">Quick and Nutritious Options</h1>
+                <p class="text-sm max-w-[75ch] py-5 lg:pl-13">
+                    Explore a variety of convenient and healthy snack ideas to keep you fueled throughout the day.
+                </p>
+                <div class="flex flex-col md:flex-row md:items-center">
+                    <img src="./Assets/Blog Section/Blog Container 4.png" alt="Sub container Image"
+                        class="object-contain max-w-[80%] sm:max-w-[70%] pl-8 sm:pl-12 lg:pl-16 py-5">
+                    <div class="flex md:items-center justify-center">
+                        <img src="./Assets/Blog Section/Icon Container Heart.svg" alt="Heart Icon"
+                            class="h-[40px] w-[40px]">
+                        <img src="./Assets/Blog Section/Icon Container Icon.svg" alt="Decore Icon"
+                            class="h-[40px] w-[40px]">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Section-->
+    <section>
+        <!-- Heading section-->
+        <div class="flex flex-col items-center gap-4 py-5">
+            <h1 class="text-2xl md:text-4xl font-semibold">Our Testimonials</h1>
+            <p class="text-sm text-center max-w-[45ch] md:max-w-fit">Our satisfied clients share their success stories
+                and experiences on their journey to
+                better health and well-being.</p>
+        </div>
+        <!-- Card section swipper slidder-->
+        <div class="swiper mySwiper max-w-6xl mx-auto px-6">
+            <div class="swiper-wrapper mb-10">
+
+                <!-- Card 1 -->
+                <div class="swiper-slide bg-white p-10 rounded-2xl shadow flex flex-col gap-6 h-[300px]">
+                    <!-- Logo -->
+                    <img src="./Assets/Testimonials/Testimonials cards logo.png" alt="Logo" class="h-12 w-12">
+                    <!-- Text -->
+                    <p class="text-sm text-gray-700 max-w-[45ch]">
+                        I can't thank Nutritionist enough for their personalized nutrition coaching.
+                        It has completely transformed my approach to food and helped me shed those extra pounds. Highly
+                        recommended!
+                    </p>
+                    <!-- Person -->
+                    <div class="flex items-center gap-3">
+                        <img src="./Assets/Testimonials/Card 1 people image.png" alt="Jennifer Anderson"
+                            class="h-16 w-16 rounded-full object-cover">
+                        <p class="text-center font-medium text-gray-800">Jennifer Anderson</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="swiper-slide bg-white p-10 rounded-2xl shadow flex flex-col gap-6 h-[300px]">
+                    <img src="./Assets/Testimonials/Testimonials cards logo.png" alt="Logo" class="h-12 w-12">
+                    <p class="text-sm text-gray-700 max-w-[45ch]">
+                        Nutritionist has been a game-changer for me. The expert guidance and support I received from
+                        their team
+                        made my weight loss journey so much easier. Thank you!
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <img src="./Assets/Testimonials/Card 2 people image.png" alt="Robert Johnson"
+                            class="h-16 w-16 rounded-full object-cover">
+                        <p class="text-center font-medium text-gray-800">Robert Johnson</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="swiper-slide bg-white p-10 rounded-2xl shadow flex flex-col gap-6 h-[300px]">
+                    <img src="./Assets/Testimonials/Testimonials cards logo.png" alt="Logo" class="h-12 w-12">
+                    <p class="text-sm text-gray-700 max-w-[45ch]">
+                        I had struggled with my weight for years until I found Nutritionist. Their personalized approach
+                        and
+                        tailored nutrition plan made all the difference. I've never felt better!
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <img src="./Assets/Testimonials/Card 3 people image.png" alt="Emily Davis"
+                            class="h-16 w-16 rounded-full object-cover">
+                        <p class="text-center font-medium text-gray-800">Emily Davis</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="swiper-slide bg-white p-10 rounded-2xl shadow flex flex-col gap-6 h-[300px]">
+                    <img src="./Assets/Testimonials/Testimonials cards logo.png" alt="Logo" class="h-12 w-12">
+                    <p class="text-sm text-gray-700 max-w-[45ch]">
+                        The Nutritionist team made healthy eating feel effortless. Their advice is practical and really
+                        works!
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <img src="./Assets/Testimonials/Card 1 people image.png" alt="Sarah Miller"
+                            class="h-16 w-16 rounded-full object-cover">
+                        <p class="text-center font-medium text-gray-800">Sarah Miller</p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="swiper-slide bg-white p-10 rounded-2xl shadow flex flex-col gap-6 h-[300px]">
+                    <img src="./Assets/Testimonials/Testimonials cards logo.png" alt="Logo" class="h-12 w-12">
+                    <p class="text-sm text-gray-700 max-w-[45ch]">
+                        Their personalized plans are realistic and easy to follow. I finally feel in control of my diet.
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <img src="./Assets/Testimonials/Card 2 people image.png" alt="James Lee"
+                            class="h-16 w-16 rounded-full object-cover">
+                        <p class="text-center font-medium text-gray-800">James Lee</p>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="swiper-slide bg-white p-10 rounded-2xl shadow flex flex-col gap-6 h-[300px]">
+                    <img src="./Assets/Testimonials/Testimonials cards logo.png" alt="Logo" class="h-12 w-12">
+                    <p class="text-sm text-gray-700 max-w-[45ch]">
+                        From meal prep to motivation, Nutritionist gave me the tools I needed for lasting change.
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <img src="./Assets/Testimonials/Card 3 people image.png" alt="Olivia Brown"
+                            class="h-16 w-16 rounded-full object-cover">
+                        <p class="text-center font-medium text-gray-800">Olivia Brown</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination pt-20"></div>
+            <!-- Swiper Navigation Buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="px-5 md:px-20 py-10 md:pb-16">
+        <!-- Heading -->
+        <div class="flex flex-col items-center gap-5 text-center">
+            <h1 class="text-2xl md:text-4xl font-semibold">Our Pricing</h1>
+            <p class="text-sm md:text-base text-[#4C4C4D] max-w-[45ch] md:max-w-[80ch]">
+                We outline our flexible and affordable options to support you on your journey
+                to optimal health and nutrition. We believe everyone deserves personalized
+                guidance and resources.
+            </p>
+        </div>
+
+        <!-- Toggle Buttons -->
+        <div class="flex flex-col items-center gap-3 py-6">
+            <div class="bg-[#F6FBE9] rounded-full p-1 flex">
+                <button id="monthly-btn"
+                    class="rounded-full px-5 py-2 text-sm font-medium bg-[#234338] text-white transition-all duration-300">
+                    Monthly
+                </button>
+                <button id="yearly-btn"
+                    class="rounded-full px-5 py-2 text-sm font-medium text-[#234338] hover:bg-[#CBEA7B] transition-all duration-300">
+                    Yearly
+                </button>
+            </div>
+            <p class="text-sm text-[#4C4C4D]">Save 50% on Yearly</p>
+        </div>
+
+        <!-- Pricing Cards -->
+        <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10 py-6">
+            <!-- Card 1 -->
+            <div
+                class="pricing-card flex flex-col justify-between bg-[#F6FBE9] p-6 rounded-2xl shadow hover:shadow-lg transition-shadow w-full md:w-[360px]">
+                <div>
+                    <h2 class="text-2xl font-semibold">Basic Plan</h2>
+                    <p class="text-sm text-[#4C4C4D]">Up to 50% off on Yearly Plan</p>
+                    <p class="text-sm pt-5 pb-7 text-[#4C4C4D]">
+                        Get started on your health journey with our Basic Plan — includes personalized
+                        nutrition coaching, app access, meal planning assistance, and email support.
+                    </p>
+                </div>
+                <div class="flex items-center gap-1">
+                    <svg class="h-7 w-7 text-[#2C5446]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <path d="M136 24c0-13.3 10.7-24 24-24s24 10.7 24 24v40h56c17.7 0 32 14.3 32 32s-14.3 
+              32-32 32H119.1c-24.9 0-45.1 20.2-45.1 45.1 0 22.5 16.5 41.5 38.7 
+              44.7l91.6 13.1c53.8 7.7 93.7 53.7 93.7 108 0 60.3-48.9 109.1-109.1 
+              109.1H178v40c0 13.3-10.7 24-24 24s-24-10.7-24-24v-40H58c-17.7 
+              0-32-14.3-32-32s14.3-32 32-32h130.9c24.9 0 45.1-20.2 
+              45.1-45.1 0-22.5-16.5-41.5-38.7-44.7l-91.6-13.1C55.9 
+              273.5 16 227.4 16 173.1 16 112.9 64.9 64 125.1 64H136V24z" />
+                    </svg>
+                    <p class="text-4xl text-[#2C5446] font-semibold price" data-monthly="49" data-yearly="24">49</p>
+                    <p class="text-sm">/Month</p>
+                </div>
+                <button
+                    class="choose-btn mt-4 p-3 bg-[#CBEA7B] rounded-xl transition-all duration-300 hover:bg-[#234338] hover:text-white">
+                    Choose Plan
+                </button>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+                class="pricing-card flex flex-col justify-between bg-[#F6FBE9] p-6 rounded-2xl shadow hover:shadow-lg transition-shadow w-full md:w-[360px]">
+                <div>
+                    <h2 class="text-2xl font-semibold">Premium Plan</h2>
+                    <p class="text-sm text-[#4C4C4D]">Up to 50% off on Yearly Plan</p>
+                    <p class="text-sm pt-5 pb-7 text-[#4C4C4D]">
+                        Upgrade to our Premium Plan for enhanced features. In addition to the Basic Plan, you'll receive
+                        video consultations, priority support, and personalized recipe recommendations.
+                    </p>
+                </div>
+                <div class="flex items-center gap-1">
+                    <svg class="h-7 w-7 text-[#2C5446]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <path d="M136 24c0-13.3 10.7-24 24-24s24 10.7 24 24v40h56c17.7 0 32 
+              14.3 32 32s-14.3 32-32 32H119.1c-24.9 0-45.1 20.2-45.1 
+              45.1 0 22.5 16.5 41.5 38.7 44.7l91.6 13.1c53.8 7.7 
+              93.7 53.7 93.7 108 0 60.3-48.9 109.1-109.1 109.1H178v40c0 
+              13.3-10.7 24-24 24s-24-10.7-24-24v-40H58c-17.7 0-32-14.3-32-32s14.3-32 
+              32-32h130.9c24.9 0 45.1-20.2 45.1-45.1 0-22.5-16.5-41.5-38.7-44.7l-91.6-13.1C55.9 
+              273.5 16 227.4 16 173.1 16 112.9 64.9 64 125.1 64H136V24z" />
+                    </svg>
+                    <p class="text-4xl text-[#2C5446] font-semibold price" data-monthly="79" data-yearly="39">79</p>
+                    <p class="text-sm">/Month</p>
+                </div>
+                <button
+                    class="choose-btn mt-4 p-3 bg-[#CBEA7B] rounded-xl transition-all duration-300 hover:bg-[#234338] hover:text-white">
+                    Choose Plan
+                </button>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+                class="pricing-card flex flex-col justify-between bg-[#F6FBE9] p-6 rounded-2xl shadow hover:shadow-lg transition-shadow w-full md:w-[360px]">
+                <div>
+                    <h2 class="text-2xl font-semibold">Ultimate Plan</h2>
+                    <p class="text-sm text-[#4C4C4D]">Up to 50% off on Yearly Plan</p>
+                    <p class="text-sm pt-5 pb-7 text-[#4C4C4D]">
+                        Experience the full benefits of personalized nutrition coaching with our Ultimate Plan. Enjoy
+                        all the features of the Premium Plan, along with 24/7 chat support and exclusive workshops.
+                    </p>
+                </div>
+                <div class="flex items-center gap-1">
+                    <svg class="h-7 w-7 text-[#2C5446]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <path d="M136 24c0-13.3 10.7-24 24-24s24 10.7 24 24v40h56c17.7 0 
+              32 14.3 32 32s-14.3 32-32 32H119.1c-24.9 0-45.1 20.2-45.1 
+              45.1 0 22.5 16.5 41.5 38.7 44.7l91.6 13.1c53.8 7.7 
+              93.7 53.7 93.7 108 0 60.3-48.9 109.1-109.1 109.1H178v40c0 
+              13.3-10.7 24-24 24s-24-10.7-24-24v-40H58c-17.7 0-32-14.3-32-32s14.3-32 
+              32-32h130.9c24.9 0 45.1-20.2 
+              45.1-45.1 0-22.5-16.5-41.5-38.7-44.7l-91.6-13.1C55.9 
+              273.5 16 227.4 16 173.1 16 112.9 64.9 64 125.1 64H136V24z" />
+                    </svg>
+                    <p class="text-4xl text-[#2C5446] font-semibold price" data-monthly="99" data-yearly="49">99</p>
+                    <p class="text-sm">/Month</p>
+                </div>
+                <button
+                    class="choose-btn mt-4 p-3 bg-[#CBEA7B] rounded-xl transition-all duration-300 hover:bg-[#234338] hover:text-white">
+                    Choose Plan
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Footer Section-->
+    <section class="bg-[#1A3129] p-5 lg:px-24 lg:py-10 flex flex-col gap-6">
+        <!--Upper nav type footer section-->
+        <div class="flex flex-col lg:flex-row justify-between items-center gap-5">
+            <!--Logo-->
+            <img src="./Assets/Logo/Nutritionist Logo.png" alt="Nutritionist" class="h-10 w-auto">
+
+            <!--Nav Links-->
+            <ul class="flex flex-wrap justify-center lg:justify-end gap-4 lg:gap-6 text-center">
+                <li><a href="index.html" class="hover:text-green-400 transition hover:underline text-white">Home</a>
+                </li>
+                <li><a href="About.html" class="hover:text-green-400 transition hover:underline text-white">About</a>
+                </li>
+                <li><a href="Team.html" class="hover:text-green-400 transition hover:underline text-white">Team</a></li>
+                <li><a href="Process.html"
+                        class="hover:text-green-400 transition hover:underline text-white">Process</a></li>
+                <li><a href="Pricing.html"
+                        class="hover:text-green-400 transition hover:underline text-white">Pricing</a></li>
+                <li><a href="Blog.html" class="hover:text-green-400 transition hover:underline text-white">Blog</a></li>
+            </ul>
+
+            <!--Go To Top-->
+            <a href="#top" class="flex items-center gap-3 scroll-smooth">
+                <p class="text-white text-sm lg:text-base">Go To Top</p>
+                <svg class="m-1 p-1 rounded-full cursor-pointer bg-[#234338]" width="34" height="34" viewBox="0 0 34 34"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M17.0002 25.5C16.296 25.5 15.7252 24.9292 15.7252 24.225L15.7252 12.9405L12.3943 16.6087C11.9062 17.1163 11.0991 17.1321 10.5915 16.6441C10.0839 16.156 10.0681 15.3489 10.5561 14.8413L16.0811 8.89129C16.3215 8.64129 16.6534 8.5 17.0002 8.5C17.347 8.5 17.6789 8.64129 17.9193 8.89129L23.4443 14.8413C23.9323 15.3489 23.9165 16.156 23.4089 16.6441C22.9013 17.1321 22.0942 17.1163 21.6061 16.6087L18.2752 12.9405V24.225C18.2752 24.9292 17.7044 25.5 17.0002 25.5Z"
+                        fill="white" />
+                </svg>
+            </a>
+        </div>
+
+        <!--Lower footer section-->
+        <div
+            class="bg-[#2C5446] flex flex-col lg:flex-row justify-between items-center gap-6 rounded-lg p-6 lg:p-10 text-center lg:text-left">
+            <!--Contact Info-->
+            <div class="flex flex-col lg:flex-row gap-6 lg:gap-10 items-center">
+                <!--Email-->
+                <div class="flex items-center gap-2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.5 8.6691V17.25C1.5 18.9069 2.84315 20.25 4.5 20.25H19.5C21.1569 20.25 22.5 18.9069 22.5 17.25V8.6691L13.5723 14.1631C12.6081 14.7564 11.3919 14.7564 10.4277 14.1631L1.5 8.6691Z"
+                            fill="#CBEA7B" />
+                        <path
+                            d="M22.5 6.90783V6.75C22.5 5.09315 21.1569 3.75 19.5 3.75H4.5C2.84315 3.75 1.5 5.09315 1.5 6.75V6.90783L11.2139 12.8856C11.696 13.1823 12.304 13.1823 12.7861 12.8856L22.5 6.90783Z"
+                            fill="#CBEA7B" />
+                    </svg>
+                    <p class="text-white text-sm lg:text-base">hello@squareup.com</p>
+                </div>
+                <!--Phone-->
+                <div class="flex items-center gap-2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1.5 4.5C1.5 2.84315 2.84315 1.5 4.5 1.5H5.87163C6.732 1.5 7.48197 2.08556 7.69064 2.92025L8.79644 7.34343C8.97941 8.0753 8.70594 8.84555 8.10242 9.29818L6.8088 10.2684C6.67447 10.3691 6.64527 10.5167 6.683 10.6197C7.81851 13.7195 10.2805 16.1815 13.3803 17.317C13.4833 17.3547 13.6309 17.3255 13.7316 17.1912L14.7018 15.8976C15.1545 15.2941 15.9247 15.0206 16.6566 15.2036L21.0798 16.3094C21.9144 16.518 22.5 17.268 22.5 18.1284V19.5C22.5 21.1569 21.1569 22.5 19.5 22.5H17.25C8.55151 22.5 1.5 15.4485 1.5 6.75V4.5Z"
+                            fill="#CBEA7B" />
+                    </svg>
+                    <p class="text-white text-sm lg:text-base">+91 91813 23 2309</p>
+                </div>
+                <!--Location-->
+                <div class="flex items-center gap-2">
+                    <svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.78975 20.101C7.81995 20.1185 7.84369 20.1321 7.8605 20.1415L7.88843 20.1571C8.1113 20.2794 8.38776 20.2785 8.61084 20.1575L8.6395 20.1415C8.65631 20.1321 8.68005 20.1185 8.71025 20.101C8.77066 20.066 8.85697 20.015 8.9655 19.9482C9.18246 19.8146 9.48875 19.6176 9.85461 19.3591C10.5851 18.8431 11.5597 18.0774 12.5365 17.0773C14.4807 15.0868 16.5 12.0962 16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.0962 2.01932 15.0868 3.96346 17.0773C4.94025 18.0774 5.91491 18.8431 6.64539 19.3591C7.01125 19.6176 7.31754 19.8146 7.5345 19.9482C7.64303 20.015 7.72934 20.066 7.78975 20.101ZM8.25 11.25C9.90685 11.25 11.25 9.90685 11.25 8.25C11.25 6.59315 9.90685 5.25 8.25 5.25C6.59315 5.25 5.25 6.59315 5.25 8.25C5.25 9.90685 6.59315 11.25 8.25 11.25Z"
+                            fill="#CBEA7B" />
+                    </svg>
+                    <p class="text-white text-sm lg:text-base">Somewhere in the World</p>
+                </div>
+            </div>
+
+            <!--Copyright-->
+            <div class="text-white text-sm lg:text-base">
+                © 2023 Nutritionist. All rights reserved.
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--SCRIPT TAGE BELOW-->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Swiper Config -->
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+
+    </script>
+    <!-- Script for Monthly / Yearly Toggle -->
+    <script>
+        const monthlyBtn = document.getElementById("monthly-btn");
+        const yearlyBtn = document.getElementById("yearly-btn");
+        const prices = document.querySelectorAll(".price");
+
+        yearlyBtn.addEventListener("click", () => {
+            prices.forEach((p) => {
+                p.textContent = p.getAttribute("data-yearly");
+                p.nextElementSibling.textContent = "/Year";
+            });
+            yearlyBtn.classList.add("bg-[#234338]", "text-white");
+            monthlyBtn.classList.remove("bg-[#234338]", "text-white");
+            monthlyBtn.classList.add("text-[#234338]");
+        });
+
+        monthlyBtn.addEventListener("click", () => {
+            prices.forEach((p) => {
+                p.textContent = p.getAttribute("data-monthly");
+                p.nextElementSibling.textContent = "/Month";
+            });
+            monthlyBtn.classList.add("bg-[#234338]", "text-white");
+            yearlyBtn.classList.remove("bg-[#234338]", "text-white");
+            yearlyBtn.classList.add("text-[#234338]");
+        });
+    </script>
+</body>
+
+</html>
